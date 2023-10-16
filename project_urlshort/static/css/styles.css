@@ -32,11 +32,54 @@ a{
     color: black;
 }
 #content>h1{
+    font-size: x-large;
     font-weight: 600;
 }
 #content>p{
     font-style: italic;
+    font-size:15px;
 }
+#content>*{
+    margin: 20px;
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+input{
+    padding: 8px;
+    background-color: none;
+    border: none;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#shortform{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 70%;
+}
+#url_val{
+    width: 83%;
+    border-radius: 10px;
+    outline: none;
+}
+#gen_url{
+    width:15%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+#gen_url:hover{
+    background-color:darkgrey;
+}
+
 @media screen and (max-width:500px) {
     #logo,#links{
         width: 45%;
@@ -50,5 +93,11 @@ a{
 @media screen and (min-width:501px) {
     #logo,#links{
         width: 40%;
+    }
+    #content{
+        max-width: 600px;
+    }
+    #gen_url{
+        margin-right:-4px;
     }
 }

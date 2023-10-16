@@ -3,6 +3,11 @@
 <main>
     <div id="content">
         <h1>Enter URL To ShortTen</h1>
+        <form action="{% url 'speedylink:index' %}" method="post" id="shortform">
+            {% csrf_token %}
+            <input type="url" placeholder="https://www.example.com" id="url_val">
+            <input type="submit" value=">" id="gen_url"></input>
+        </form>
         <p>Your solution for swift, hassle-free URL management. Transform lengthy web addresses into concise, shareable links effortlessly. Simplify your online experience with SpeedyLink.</p>
     </div>
 </main>
