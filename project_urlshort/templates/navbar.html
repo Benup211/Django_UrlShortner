@@ -1,0 +1,14 @@
+{% load static %}
+<nav>
+    <div id="logo">
+        <img src="{% static 'images/logo-black.svg' %}" alt="SpeedyLink">
+    </div>
+    <div id="links">
+        <ul>
+            <li><a href="{% url 'speedylink:index' %}"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li><i class="fa fa-user fa-2x" aria-hidden="true"></i>
+            </li>
+        </ul>
+    </div>
+</nav>
