@@ -3,14 +3,15 @@
 {% block title %}SignIn{% endblock %}
 {% block content %}
 <main>
-    <div id="content" class="signin_content">
+    <div id="content" class="signup_content">
         <h1>SpeedyLink</h1>
-        <form id="signin_form">
+        <form id="signup_form">
+            <input type="text" id="username" name="username" placeholder="Username" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
             <input type="password" id="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login" id="login">
+            <input type="submit" value="SignUp" id="login">
         </form>
-        <button id="signup_btn"><a href="{% url 'speedylink:signup' %}">Create New Account</a></button>
+        <button id="signup_btn"><a href="{% url 'speedylink:signin' %}">Login</a></button>
     </div>
 </main>
 {% endblock %}

@@ -51,6 +51,8 @@ main{
 }
 input{
     padding: 8px;
+}
+#url_val,#gen_url{
     background-color: none;
     border: none;
 }
@@ -79,7 +81,24 @@ input{
 #gen_url:hover{
     background-color:darkgrey;
 }
-
+#signin_form,#signup_form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+#email,#password,#login,#username{
+    margin:10px 0px;
+}
+.signin_content,.signup_content{
+    background-color:whitesmoke;
+    border-radius: 10px;
+}
+#signup_btn{
+    padding: 8px;
+    width: 90%;
+    margin-top: 0;
+}
 @media screen and (max-width:500px) {
     #logo,#links{
         width: 45%;
@@ -89,6 +108,10 @@ input{
         height: 80px;
         object-fit: cover;
     }
+    #content{
+        max-width: 600px;
+        min-width: 300px;
+    }
 }
 @media screen and (min-width:501px) {
     #logo,#links{
@@ -96,6 +119,7 @@ input{
     }
     #content{
         max-width: 600px;
+        min-width: 300px;
     }
     #gen_url{
         margin-right:-4px;

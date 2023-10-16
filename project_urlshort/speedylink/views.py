@@ -19,4 +19,7 @@ def Signin_view(request):
         return redirect('speedylink:profile')
 
 def Signup_view(request):
-    return HttpResponse("SignUp")
+    if request.user.is_anonymous:
+        return render(request,'speedylink/signup.html',{})
+    else:
+        return redirect('speedylink:profile')
